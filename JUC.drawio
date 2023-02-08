@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-08T03:17:37.763Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="DurvNVq2MPJ88XOdPBkg" version="20.8.18" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-08T03:19:51.522Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="whLBf628SiaSAe2iwMCa" version="20.8.18" type="github">
   <diagram name="第 1 页" id="tizCBJ4NKOCjr-1ZEh5j">
-    <mxGraphModel dx="1687" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2219" dy="939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,7 +62,7 @@
           <mxGeometry x="490" y="510" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-15" value="终止&lt;br&gt;(TERMINATED)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="1060" y="370" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-17" target="bgsILNq23VBd8kHxIPbx-7" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -72,7 +72,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-17" value="阻塞&lt;br&gt;(BLOCKED)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1040" y="50" width="120" height="60" as="geometry" />
+          <mxGeometry x="930" y="80" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-18" value="&lt;ul&gt;&lt;li&gt;等待进入synchronized 方法&lt;/li&gt;&lt;li&gt;等待进入synchronized代码块&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
           <mxGeometry x="700" y="40" width="240" height="80" as="geometry" />
@@ -88,31 +88,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-21" value="等待&lt;br&gt;(WAITING)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="360" y="870" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="790" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-22" value="&lt;ul&gt;&lt;li&gt;Object.wait()&lt;/li&gt;&lt;li&gt;Thread.join()&lt;/li&gt;&lt;li&gt;LockSupport.park()&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="270" y="670" width="150" height="110" as="geometry" />
+          <mxGeometry x="300" y="620" width="150" height="110" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-23" value="&lt;ul&gt;&lt;li&gt;Object.notify()&lt;/li&gt;&lt;li&gt;Object.notifyAll()&lt;/li&gt;&lt;li&gt;LockSupport.unpark(Thread)&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="600" y="700" width="283" height="160" as="geometry" />
+          <mxGeometry x="610" y="650" width="283" height="160" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.904;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-25" target="bgsILNq23VBd8kHxIPbx-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-25" value="超时等待&lt;br&gt;(TIMED_WAITING)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1160" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="1040" y="630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-26" value="&lt;ul&gt;&lt;li&gt;Thread.sleep(long)&lt;/li&gt;&lt;li&gt;Object.wait(long)&lt;/li&gt;&lt;li&gt;Thread.join(long)&lt;/li&gt;&lt;li&gt;LockSupport.parkNanos()&lt;/li&gt;&lt;li&gt;LockSupport.parkUntil()&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="930" y="460" width="240" height="140" as="geometry" />
+          <mxGeometry x="900" y="480" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-27" value="&lt;ul&gt;&lt;li&gt;Object.notify()&lt;/li&gt;&lt;li&gt;Objecr.notifyAll()&lt;/li&gt;&lt;li&gt;LockSupport.unpart(Thread)&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="860" y="640" width="240" height="140" as="geometry" />
+          <mxGeometry x="815" y="605" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-28" value="处于这种状态的线程不会被分配CPU执行时间，它们要等待被显式地唤醒，否则会处于无限期等待的状态。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="140" y="940" width="610" height="60" as="geometry" />
+          <mxGeometry x="160" y="840" width="610" height="60" as="geometry" />
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-29" value="处于这种状态的线程不会被分配CPU执行时间，不过无须无限期等待被其他线程显示地唤醒，在达到一定时间后它们会自动唤醒" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1020" y="750" width="440" height="100" as="geometry" />
+          <mxGeometry x="1020" y="670" width="440" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
