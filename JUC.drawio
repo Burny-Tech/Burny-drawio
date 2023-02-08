@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-02-08T03:11:02.436Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="XXWNXaJWbZ-TW86empCc" version="20.8.18" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-08T03:17:37.763Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="DurvNVq2MPJ88XOdPBkg" version="20.8.18" type="github">
   <diagram name="第 1 页" id="tizCBJ4NKOCjr-1ZEh5j">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1687" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -113,116 +113,6 @@
         </mxCell>
         <mxCell id="bgsILNq23VBd8kHxIPbx-29" value="处于这种状态的线程不会被分配CPU执行时间，不过无须无限期等待被其他线程显示地唤醒，在达到一定时间后它们会自动唤醒" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1020" y="750" width="440" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-31" target="bgsILNq23VBd8kHxIPbx-36" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="260" y="1400" />
-              <mxPoint x="260" y="1400" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-31" value="初始&lt;br&gt;(NEW)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="80" y="1370" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-32" value="执行完成" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-36" target="bgsILNq23VBd8kHxIPbx-44" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-33" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-36" target="bgsILNq23VBd8kHxIPbx-46" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="890" y="1130" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-36" target="bgsILNq23VBd8kHxIPbx-50" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="470" y="1740" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="bgsILNq23VBd8kHxIPbx-36" target="bgsILNq23VBd8kHxIPbx-54" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-36" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="400" y="1225" width="380" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-37" value="Thread.start()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="230" y="1375" width="100" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-38" value="运行&lt;br&gt;(RUNNABLE)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="470" y="1240" width="240" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-39" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-41" target="bgsILNq23VBd8kHxIPbx-43" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-40" value="Thread.yield()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="bgsILNq23VBd8kHxIPbx-39" vertex="1" connectable="0">
-          <mxGeometry x="-0.2757" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-41" value="运行中&lt;br&gt;(RUNNING)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1345" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-42" value="系统调度" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-43" target="bgsILNq23VBd8kHxIPbx-41" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-43" value="就绪&lt;br&gt;(READY)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1510" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-44" value="终止&lt;br&gt;(TERMINATED)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1320" y="1370" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-45" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-46" target="bgsILNq23VBd8kHxIPbx-36" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="940" y="1200" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-46" value="阻塞&lt;br&gt;(BLOCKED)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1080" y="1050" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-47" value="&lt;ul&gt;&lt;li&gt;等待进入synchronized 方法&lt;/li&gt;&lt;li&gt;等待进入synchronized代码块&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="740" y="1040" width="240" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-48" value="&lt;ul&gt;&lt;li&gt;获得到锁&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="910" y="1190" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-49" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-50" target="bgsILNq23VBd8kHxIPbx-36" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="680" y="1730" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-50" value="等待&lt;br&gt;(WAITING)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="400" y="1870" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-51" value="&lt;ul&gt;&lt;li&gt;Object.wait()&lt;/li&gt;&lt;li&gt;Thread.join()&lt;/li&gt;&lt;li&gt;LockSupport.park()&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="310" y="1670" width="150" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-52" value="&lt;ul&gt;&lt;li&gt;Object.notify()&lt;/li&gt;&lt;li&gt;Object.notifyAll()&lt;/li&gt;&lt;li&gt;LockSupport.unpark(Thread)&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="640" y="1700" width="283" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-53" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.904;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="bgsILNq23VBd8kHxIPbx-54" target="bgsILNq23VBd8kHxIPbx-36" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-54" value="超时等待&lt;br&gt;(TIMED_WAITING)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1200" y="1680" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-55" value="&lt;ul&gt;&lt;li&gt;Thread.sleep(long)&lt;/li&gt;&lt;li&gt;Object.wait(long)&lt;/li&gt;&lt;li&gt;Thread.join(long)&lt;/li&gt;&lt;li&gt;LockSupport.parkNanos()&lt;/li&gt;&lt;li&gt;LockSupport.parkUntil()&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="970" y="1460" width="240" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-56" value="&lt;ul&gt;&lt;li&gt;Object.notify()&lt;/li&gt;&lt;li&gt;Objecr.notifyAll()&lt;/li&gt;&lt;li&gt;LockSupport.unpart(Thread)&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" parent="1" vertex="1">
-          <mxGeometry x="900" y="1640" width="240" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-57" value="处于这种状态的线程不会被分配CPU执行时间，它们要等待被显式地唤醒，否则会处于无限期等待的状态。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="180" y="1940" width="610" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="bgsILNq23VBd8kHxIPbx-58" value="处于这种状态的线程不会被分配CPU执行时间，不过无须无限期等待被其他线程显示地唤醒，在达到一定时间后它们会自动唤醒" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="1750" width="440" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
