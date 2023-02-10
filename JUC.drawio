@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-10T06:13:43.258Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="_MwiNCE06VggiRviW1mb" version="20.8.18" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-10T06:15:33.937Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="tK7tYhI7Z0jJbIL9GGmf" version="20.8.18" type="github">
   <diagram name="第 1 页" id="tizCBJ4NKOCjr-1ZEh5j">
     <mxGraphModel dx="1687" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -322,8 +322,18 @@
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-3" target="Ct1ywtU4N7qeFrewI2VZ-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-32" value="自旋锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="Ct1ywtU4N7qeFrewI2VZ-16">
+          <mxGeometry x="-0.3307" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-3" target="Ct1ywtU4N7qeFrewI2VZ-4">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-33" value="非自旋锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="Ct1ywtU4N7qeFrewI2VZ-27">
+          <mxGeometry x="0.1931" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-3" value="自旋锁&lt;br style=&quot;font-size: 18px;&quot;&gt;or&lt;br style=&quot;font-size: 18px;&quot;&gt;非自旋锁" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="460" y="2215" width="110" height="110" as="geometry" />
@@ -355,11 +365,21 @@
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-8" target="Ct1ywtU4N7qeFrewI2VZ-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-31" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="Ct1ywtU4N7qeFrewI2VZ-23">
+          <mxGeometry x="0.1665" y="-4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-24" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-8" target="Ct1ywtU4N7qeFrewI2VZ-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="70" y="2490" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-30" value="失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="Ct1ywtU4N7qeFrewI2VZ-24">
+          <mxGeometry x="0.1693" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-8" value="再尝试获取锁" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
@@ -371,10 +391,10 @@
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-9" value="不放弃CPU时间片，通过自选等待锁释放" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="425" y="2415" width="180" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-11" target="Ct1ywtU4N7qeFrewI2VZ-12">
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-18" value="成功" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-11" target="Ct1ywtU4N7qeFrewI2VZ-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-11" target="Ct1ywtU4N7qeFrewI2VZ-9">
+        <mxCell id="Ct1ywtU4N7qeFrewI2VZ-29" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="Ct1ywtU4N7qeFrewI2VZ-11" target="Ct1ywtU4N7qeFrewI2VZ-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="700" y="2608.9999999999995" />
@@ -386,7 +406,7 @@
           <mxGeometry x="454" y="2548" width="122" height="122" as="geometry" />
         </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-12" value="获取同步资源的锁" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="455" y="2700" width="120" height="60" as="geometry" />
+          <mxGeometry x="456" y="2820" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ct1ywtU4N7qeFrewI2VZ-14" value="通过自选操作减少CPU切换一级恢复现场导致的消耗" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="715" y="2518" width="305" height="30" as="geometry" />
