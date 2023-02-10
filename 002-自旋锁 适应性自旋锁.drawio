@@ -1,1 +1,108 @@
-<mxfile host="app.diagrams.net" modified="2023-02-10T06:22:47.091Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.18" etag="rNmLH3kxG1dgsVenoqXD" type="github"><diagram name="第 1 页" id="VOT-0JcvCiHKOIo_rCWC">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-10T06:23:41.800Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="2i_3uJhK8uBqC9hqDjat" version="20.8.18" type="github">
+  <diagram name="第 1 页" id="VOT-0JcvCiHKOIo_rCWC">
+    <mxGraphModel dx="2390" dy="1273" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-1" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-2" target="fdQrPmKFKi0tOnAgP_fk-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-2" value="某线程尝试获取同步资源的锁失败，资源被占用" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="390" y="130" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-7" target="fdQrPmKFKi0tOnAgP_fk-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-4" value="自旋锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="fdQrPmKFKi0tOnAgP_fk-3">
+          <mxGeometry x="-0.3307" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-7" target="fdQrPmKFKi0tOnAgP_fk-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-6" value="非自旋锁" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="fdQrPmKFKi0tOnAgP_fk-5">
+          <mxGeometry x="0.1931" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-7" value="自旋锁&lt;br style=&quot;font-size: 18px;&quot;&gt;or&lt;br style=&quot;font-size: 18px;&quot;&gt;非自旋锁" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="530" y="205" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-9" target="fdQrPmKFKi0tOnAgP_fk-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-9" value="CPU切换状态，使当前线程休眠" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="205" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-11" target="fdQrPmKFKi0tOnAgP_fk-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-11" value="执行其他操作" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="205" y="345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-13" target="fdQrPmKFKi0tOnAgP_fk-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-13" value="占用同步资源的线程（即上述的其他线程完成了工作）释放了锁" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="175" y="448" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-15" target="fdQrPmKFKi0tOnAgP_fk-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-15" value="恢复现场" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="205" y="575" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-20" target="fdQrPmKFKi0tOnAgP_fk-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-17" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="fdQrPmKFKi0tOnAgP_fk-16">
+          <mxGeometry x="0.1665" y="-4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-18" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-20" target="fdQrPmKFKi0tOnAgP_fk-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-19" value="失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="fdQrPmKFKi0tOnAgP_fk-18">
+          <mxGeometry x="0.1693" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-20" value="再尝试获取锁" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="230" y="800" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-22" target="fdQrPmKFKi0tOnAgP_fk-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-22" value="不放弃CPU时间片，通过自选等待锁释放" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="495" y="405" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-23" value="成功" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-25" target="fdQrPmKFKi0tOnAgP_fk-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-24" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="fdQrPmKFKi0tOnAgP_fk-25" target="fdQrPmKFKi0tOnAgP_fk-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="598.9999999999995" />
+              <mxPoint x="770" y="442.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-25" value="再尝试获取锁" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="524" y="538" width="122" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-26" value="获取同步资源的锁" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="526" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fdQrPmKFKi0tOnAgP_fk-27" value="通过自选操作减少CPU切换一级恢复现场导致的消耗" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="785" y="508" width="305" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
