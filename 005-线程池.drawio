@@ -1,1 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2023-02-15T09:17:22.176Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.8.20" etag="IJ-M9h5Aiqf_jwyL1ASW" type="github"><diagram name="第 1 页" id="3IES_stvR7X9TyYMUTEX">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-15T09:28:00.912Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="E2qCYdiRQRBARy9duai1" version="20.8.20" type="github">
+  <diagram name="第 1 页" id="3IES_stvR7X9TyYMUTEX">
+    <mxGraphModel dx="1420" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="291" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;I Executor&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-2" target="gCUBOhOc8bXBO2St1FBI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;I ExecutorService&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="86" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-11" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-3" target="gCUBOhOc8bXBO2St1FBI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;I ScheduledExecutorService&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="160" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=18;dashed=1;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-5" target="gCUBOhOc8bXBO2St1FBI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C AbstractExecutorService&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-13" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-6" target="gCUBOhOc8bXBO2St1FBI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;C ThreadPoolExecutor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="250" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.558;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-7" target="gCUBOhOc8bXBO2St1FBI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-7" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;C ForkJoinPool&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="250" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-8" target="gCUBOhOc8bXBO2St1FBI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-8" target="gCUBOhOc8bXBO2St1FBI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-8" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;C ScheduledThreadPoolExecutor&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-17" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-9" target="gCUBOhOc8bXBO2St1FBI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-9" target="gCUBOhOc8bXBO2St1FBI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="gCUBOhOc8bXBO2St1FBI-9" target="gCUBOhOc8bXBO2St1FBI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C Executors&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="460" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-21" value="I:interface" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="670" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="gCUBOhOc8bXBO2St1FBI-22" value="C:class" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="670" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
